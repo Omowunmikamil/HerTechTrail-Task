@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e0cbfe;
+  margin: 20rem auto;
+  max-height: 100vh;
+  text-align: center;
+}
+
+#btn {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 14px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn:hover {
+  background-color: transparent;
+  color: #000;
+  border: 3px solid #4834d4;
+}
