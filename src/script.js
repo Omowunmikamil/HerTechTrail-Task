@@ -1,6 +1,6 @@
 const body = document.getElementById("body");
 const button = document.getElementById("btn");
-const historyDiv = document.getElementById("history");
+const historyList = document.getElementById("history");
 
 const colors = [
   "red",
@@ -30,12 +30,16 @@ function changeBackground() {
 }
 
 function showHistory() {
-  historyDiv.innerHTML = "";
+  historyList.innerHTML = "";
+
   colorHistory.forEach((color) => {
-    const div = document.createElement("div");
-    div.className = "history-div";
-    div.style.backgroundColor = color;
-    historyDiv.appendChild(div);
+    const li = document.createElement("li");
+    li.className = "history-list";
+    li.style.backgroundColor = color;
+
+    li.innerHTML = color;
+
+    historyList.appendChild(li);
   });
 }
 
